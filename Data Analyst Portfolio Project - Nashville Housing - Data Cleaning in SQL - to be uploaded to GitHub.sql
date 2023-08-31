@@ -5,13 +5,13 @@ Cleaning Data in SQL Queries
 */
 
 
+
 SELECT *
 FROM [Portfolio_Project_Nashville Housing Data].dbo.Nashville_Housing
 
 --------------------------------------------------------------------------------------------------------------------------
 
--- Standardize Date Format
-
+-- Standardise date format
 
 SELECT SaleDateConverted , CONVERT(date, SaleDate)
 FROM [Portfolio_Project_Nashville Housing Data].dbo.Nashville_Housing
@@ -28,8 +28,8 @@ SET SaleDateConverted = CONVERT(date, SaleDate)
 
  --------------------------------------------------------------------------------------------------------------------------
 
--- Populate Property Address data
-
+-- Populate property address data
+ 
 SELECT *
 FROM [Portfolio_Project_Nashville Housing Data].dbo.Nashville_Housing
 --WHERE PropertyAddress IS NULL
@@ -57,7 +57,7 @@ WHERE A.PropertyAddress IS NULL
 
 --------------------------------------------------------------------------------------------------------------------------
 
--- Breaking out Address into Individual Columns (Address, City, State)
+-- Breaking out address into individual columns (Address, City, State)
 
 SELECT PropertyAddress
 FROM [Portfolio_Project_Nashville Housing Data].dbo.Nashville_Housing
@@ -127,7 +127,7 @@ FROM [Portfolio_Project_Nashville Housing Data].dbo.Nashville_Housing
 --------------------------------------------------------------------------------------------------------------------------
 
 
--- Change Y and N to Yes and No in "Sold as Vacant" field
+-- Standardising data in "Sold as Vacant" field
 
 SELECT DISTINCT(SoldAsVacant), COUNT(SoldAsVacant)
 FROM [Portfolio_Project_Nashville Housing Data].dbo.Nashville_Housing
@@ -159,7 +159,8 @@ ORDER BY 2
 
 --- Remove Duplicates ---
 
---- Finding the Duplicates
+--- Finding the duplicates
+
 WITH Row_Num_CTE AS (
 SELECT *,
 ROW_NUMBER() OVER (
@@ -207,7 +208,6 @@ FROM [Portfolio_Project_Nashville Housing Data].dbo.Nashville_Housing
 ---------------------------------------------------------------------------------------------------------
 
 -- Delete Unused Columns (Deleting the columns PropertyAddress, OwnerAddress, SaleDate and TaxDistrict )
-
 
 
 SELECT *
