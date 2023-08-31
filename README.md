@@ -27,6 +27,3 @@ The project utilized various SQL queries for the data cleaning process. A few no
 - Standardizing "Sold as Vacant" field values
 - Identifying and deleting duplicate entries
 - Removing unused columns
-
-## Note
-Please refer to the original repository for the full set of SQL queries and detailed implementation: [GitHub Repository](https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx).
