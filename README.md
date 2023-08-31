@@ -1,14 +1,12 @@
 # Nashville Housing Data Cleaning
 
 ## Project Overview
-
-### What is this project?
 This project involves data cleaning of the Nashville housing dataset to showcase proficiency in SQL skills.
 
-### Data Sources
+## Data Sources
 The original Excel file for the Nashville housing data is available in this repository: [Nashville Housing Data for Data Cleaning](https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx).
 
-### Skills Demonstrated
+## Skills Demonstrated
 The following skills were demonstrated in this project:
 
 - Data cleaning using SQL queries
@@ -19,7 +17,7 @@ The following skills were demonstrated in this project:
 - Removing duplicate entries
 - Deleting unused columns (PropertyAddress, OwnerAddress, SaleDate, TaxDistrict)
 
-### Cleaning Data in SQL Queries
+## Cleaning Data in SQL Queries
 The project utilized various SQL queries for the data cleaning process. A few notable queries included:
 - Standardizing date formats
 - Populating missing property addresses
